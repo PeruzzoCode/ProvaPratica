@@ -1,5 +1,24 @@
 <?php 
 
+class Robo{
+
+    public $nome, $modelo, $energia, $potencia;
+
+    function __construct($nome, $modelo, $energia, $potencia)
+    {
+        $this -> nome = $nome;
+        $this -> modelo = $modelo;
+        $this -> energia = $energia;
+        $this -> potencia = $potencia;
+    }
+
+    function exibirStatus(){
+        return "Energia: $this->energia | Potência: $this->potencia";
+    }
+    
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +62,6 @@
 
     </div>
     
-    <label for="operador" >Digite seu nome:</label>
     <input type="text" id="operador" name="operador">
     <input type="text" id="robo" name="robo">
     <input type="text" id="modelo" name="modelo">
