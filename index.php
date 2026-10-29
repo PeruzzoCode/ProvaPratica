@@ -24,7 +24,23 @@ function e($valor){
 
             if ($nome && $operador && isset($tipos[$modelo])) {
                 $robo = new Robo($nome, $modelo, ...$tipos[$modelo]);
-                $_SESSION ["operador"] = $operador
+                $robos[] = (array)$robo;
+                $_SESSION ["operador"] = $operador;
+                $mensagem = "Robô cadastrado!";
+            }
+            else {
+                $mensagem = "Preencha todos os campos!";
+            }
+        }
+        if (isset($_POST["recarregar"])) {
+            $id = filter_var($_POST["recarregar"], FILTER_VALIDATE_INT);
+            if ($id !== false && isset($robos[$id])) {
+                $r = $robos[$id];
+                $robo = new Robo ($r["nome"], $r["modelo"], $r["energia"], $r["potencia"]);
+                $robo->recarregar();
+                $robos[$id] = (array)$robo;
+                $_SESSION("recargas")++;
+                $mensagem = "Recarga realizada!";
             }
         }
     }
