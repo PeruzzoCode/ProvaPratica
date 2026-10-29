@@ -11,9 +11,9 @@
 </head>
 <body>
     
-    <input type="text" id="" name="NOME DO OPERADOR:">
-    <input type="text" id="" name="NOME DO ROBÔ:">
-    <input type="text" id="" name="MODELO:">
-    
+    <input type="text" id="NOME DO OPERADOR:" name="operador">
+    <input type="text" id="NOME DO ROBÔ:" name="robo">
+    <input type="text" id="MODELO:" name="modelo">
+
 </body>
 </html>
