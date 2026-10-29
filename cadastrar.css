@@ -1,6 +1,7 @@
 .tiposrobos {
     align-items: center;
-    border-width: 10px;
+    border: 10px yellowgreen;
+    border-radius: 10%;
     flex: auto;
     background-color: yellow;
 }
