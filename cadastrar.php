@@ -43,10 +43,10 @@
 
     </div>
     
-    
-    <input type="text" id="NOME DO OPERADOR:" name="operador">
-    <input type="text" id="NOME DO ROBÔ:" name="robo">
-    <input type="text" id="MODELO:" name="modelo">
+    <label for="operador">Digite seu nome:</label>
+    <input type="text" id="operador" name="operador">
+    <input type="text" id="robo" name="robo">
+    <input type="text" id="modelo" name="modelo">
 
 </body>
 </html>
