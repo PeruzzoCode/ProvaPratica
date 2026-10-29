@@ -1,5 +1,28 @@
-.tiposrobos {
-    flex-direction: column;
-    background-color: yellow;
-    display: flex;
+
+body {
+    font-family: Arial;
+    background: #eee;
+    padding: 20px;
 }
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.robo {
+    padding: 15px;
+    margin: 10px 0;
+    background: #f5f5f5;
+}
+
+.Explorador { border-left: 5px solid blue; }
+.Engenheiro { border-left: 5px solid orange; }
+.Defensor { border-left: 5px solid red; }
