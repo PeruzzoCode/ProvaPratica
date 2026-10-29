@@ -43,8 +43,8 @@
 
     </div>
     
-    <label for="operador" >Digite seu nome:<input type="text" id="operador" name="operador"></label>
-    <input type="text" id="operador" name="operador">
+    
+    <<label for="operador" >Digite seu nome:</label>input type="text" id="operador" name="operador">
     <input type="text" id="robo" name="robo">
     <input type="text" id="modelo" name="modelo">
 
