@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastrar.css">
-    <title>PROVA PRÁTICA</title>
-</head>
-<body>
-    <h1>Está é uma prova prática que vale 1 ponto extra na matéria de desenvolvimento de sistemas!</h1><br>
+<?php 
 
-    <h2>ESTAÇÃO ESPACIAL!</h2>
-    <a href = "robo.php">Robôs!</a>
-</body>
-</html>
+session_start();
+require "Robo.php";
+
+$arquivo = "robos.json";
+$tobos = json_decode(file_get_contents($arquivo), true) ?? [];
+$_SESSION["recargas"] ??=0;
+$mensagem = "";
+
+$tipos = [
+    "Explorador" => [100, 20],
+    "Engenheiro" => [120, 15],
+    "Defensor" => [150, 30]
+];
+
+?>
